@@ -25,8 +25,12 @@ namespace LambadaDemo
                     case 3:
                         person.AverageAge();
                         break;
+                    case 4:
+                        person.GetTopRecordBetweenRange();
+                        break;
                     case 0:
-                        check = false;                         break;
+                        check = false;                         
+                        break;
                 }
             }
         }
