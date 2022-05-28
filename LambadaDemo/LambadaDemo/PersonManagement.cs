@@ -48,5 +48,10 @@ namespace LambadaDemo
                 }
             }
         }
+        public void FindName()
+        {
+            var value = this.list.Where(x => x.Name == "Vijay");
+            Display(value);
+        }
     }
 }
