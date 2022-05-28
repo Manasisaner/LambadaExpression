@@ -53,5 +53,10 @@ namespace LambadaDemo
             var value = this.list.Where(x => x.Name == "Vijay");
             Display(value);
         }
+        public void SkipRecord()
+        {
+            var result = list.Skip(this.list.Where(x => x.Age < 60).Count());
+            Display(result);
+        }
     }
 }
