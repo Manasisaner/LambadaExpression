@@ -38,5 +38,15 @@ namespace LambadaDemo
             var result = this.list.Average(x => x.Age);
             Console.WriteLine("Average Age is :->" + result);
         }
+        public void GetTopRecordBetweenRange()
+        {
+            foreach (var record in this.list)
+            {
+                if (record.Age < 18 && record.Age > 13)
+                {
+                    Console.WriteLine(record.Age);
+                }
+            }
+        }
     }
 }
