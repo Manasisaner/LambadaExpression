@@ -34,6 +34,9 @@ namespace LambadaDemo
                     case 6:
                         person.SkipRecord();
                         break;
+                    case 7:
+                        person.RemoveSpecificName();
+                        break;
                     case 0:
                         check = false;                         
                         break;
