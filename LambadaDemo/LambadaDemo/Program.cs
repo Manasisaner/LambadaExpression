@@ -19,6 +19,9 @@ namespace LambadaDemo
                     case 1:
                         person.AddPerson();
                         break;
+                    case 2:
+                        person.GetTopRecords();
+                        break;
                     case 0:
                         break;
                 }
