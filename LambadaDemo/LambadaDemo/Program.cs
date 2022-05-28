@@ -31,6 +31,9 @@ namespace LambadaDemo
                     case 5:
                         person.FindName();
                         break;
+                    case 6:
+                        person.SkipRecord();
+                        break;
                     case 0:
                         check = false;                         
                         break;
