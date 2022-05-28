@@ -19,9 +19,11 @@ namespace LambadaDemo
             list.Add(new Person { SSN = 106, name = "Anurag", Address = "Mumbai", Age = 58 });
             list.Add(new Person { SSN = 106, name = "Anurag", Address = "Mumbai", Age = 58 });
         }
+
+
         public void GetTopRecords()
         {
-            var result = this.list.Where(X => X.Age < 60).Take(2);
+            var result = this.list.Where(x => x.Age < 60).Take(2);
             Display(result);
         }
         public void Display(IEnumerable<Person> list)
@@ -30,6 +32,11 @@ namespace LambadaDemo
             {
                 Console.WriteLine(person.SSN + "" + person.Name + "" + person.Address + "" + person.Age + "");
             }
+        }
+        public void AverageAge()
+        {
+            var result = this.list.Average(x => x.Age);
+            Console.WriteLine("Average Age is :->" + result);
         }
     }
 }

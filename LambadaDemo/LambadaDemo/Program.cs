@@ -9,9 +9,9 @@ namespace LambadaDemo
             Console.WriteLine("Wel-come in the Lambada Expression");
             PersonManagement person = new PersonManagement();
             bool check = true;
-            while(check)
+            while (check)
             {
-                Console.WriteLine("Sdding the data in the list 1 \n");
+                Console.WriteLine("Adding the data in the list 1 \n");
                 Console.WriteLine("Above option to execute the use cases");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -22,8 +22,11 @@ namespace LambadaDemo
                     case 2:
                         person.GetTopRecords();
                         break;
-                    case 0:
+                    case 3:
+                        person.AverageAge();
                         break;
+                    case 0:
+                        check = false;                         break;
                 }
             }
         }
