@@ -28,6 +28,9 @@ namespace LambadaDemo
                     case 4:
                         person.GetTopRecordBetweenRange();
                         break;
+                    case 5:
+                        person.FindName();
+                        break;
                     case 0:
                         check = false;                         
                         break;
